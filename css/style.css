@@ -1,0 +1,418 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  background-color: #aadfaa;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#footer {
+  width: 100%;
+  background-color: #006400;
+  height: 50px;
+  color: white;
+}
+
+footer h3 {
+  padding: 10px;
+  font-size: 1em;
+}
+
+#homepage,
+#aboutus {
+  height: 80vh;
+}
+
+#owners {
+  height: 80vh;
+}
+
+#owners h1,
+h2,
+p {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 2em;
+}
+#aboutus p,
+#owners article p {
+  font-size: 1.5em;
+  margin: 70px 40px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+#homepage h1 {
+  font-size: 2em;
+  margin: 70px 40px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+#imagestable {
+  margin-left: auto;
+  margin-right: auto;
+  border: 10px solid #006400;
+}
+
+#imagestable td {
+  width: 15rem;
+  height: 15rem;
+}
+
+#timetable {
+  height: 85vh;
+}
+
+#timetable h2 {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2.5em;
+}
+
+#timings {
+  border-collapse: collapse;
+  width: 80vw;
+  height: 80vh;
+  margin: 1rem 10rem;
+  display: table;
+  align-items: center;
+  justify-content: center;
+}
+
+#timings td,
+th {
+  border: 3px solid #000;
+  text-align: left;
+  padding: 8px;
+  font-size: 1.5em;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+#formdiv {
+  margin: 3rem 5rem;
+  width: 80vw;
+  height: 105vh;
+}
+
+#formdiv input[type="text"],
+[type="phone"],
+label {
+  display: flex;
+  width: 40vw;
+  height: 2.5vh;
+  margin-top: 5px;
+  text-align: center;
+}
+
+#formdiv textarea {
+  width: 40vw;
+  height: 10vh;
+  resize: none;
+}
+
+#formdiv input[type="email"] {
+  width: 20vw;
+  height: 2.5vh;
+  text-align: center;
+}
+
+#formdiv input[type="submit"] {
+  display: flex;
+  border: none;
+  font-size: 1em;
+  margin-top: 10px;
+  color: #fff;
+  background-color: #006400;
+  border-radius: 10px;
+}
+
+#formdiv input[type="tel"] {
+  text-align: center;
+}
+
+#formdiv input[type="submit"]:hover {
+  background-color: green;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#formdiv input:required {
+  border: 2px solid navy;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #006400;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #aadfaa;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  text-align: center;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: green;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.input-icons i {
+  position: absolute;
+}
+
+.input-icons {
+  margin-bottom: 10px;
+}
+
+.icon {
+  padding: 5px;
+}
+
+@media screen and (max-width: 900px) {
+  .topnav {
+    width: 100%;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav:not(.responsive) .topnav-menu {
+    display: none;
+  }
+  .topnav.responsive .topnav-menu {
+    padding-top: 52px;
+  }
+  .topnav.responsive .topnav-menu a {
+    float: none;
+    text-align: right;
+    margin-right: 5px;
+  }
+
+  #homepage h1 {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
+  #aboutus p {
+    font-size: 0.8em;
+    line-height: 1.2;
+  }
+
+  #homepage,
+  #aboutus {
+    height: 100vh;
+  }
+
+  #owners {
+    height: 100vh;
+  }
+
+  #owners h1 {
+    font-size: 2em;
+  }
+
+  #owners blockquote {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
+  #owners p {
+    font-size: 0.75em;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  #timetable h1 {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  #timings {
+    border-collapse: collapse;
+    width: 80vw;
+    height: 100vh;
+    margin: auto;
+    display: table;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #timings td,
+  th {
+    border: 1px solid #000;
+    text-align: left;
+    font-size: 0.75em;
+    text-align: center;
+    vertical-align: top;
+    overflow: hidden;
+  }
+
+  article {
+    height: 60vh;
+    width: 80vw;
+    margin-right: 10rem;
+  }
+
+  article h1 {
+    font-size: 1.5em;
+  }
+
+  article p {
+    font-size: 1em;
+  }
+
+  #aboutus p {
+    font-size: 0.85em;
+  }
+
+  #formdiv {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+    height: 100vh;
+  }
+  #formdiv p {
+    font-size: 1em;
+  }
+  #formdiv label {
+    display: none;
+  }
+
+  #formdiv input[type="text"],
+  [type="tel"] {
+    margin: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 80vw;
+  }
+
+  #formdiv textarea {
+    margin: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 80vw;
+  }
+
+  #formdiv input[type="email"] {
+    margin: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 80vw;
+  }
+
+  #formdiv input[id="add2"] {
+    display: none;
+  }
+  #formdiv input[type="submit"] {
+    width: 15vw;
+  }
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+
+  .input-icons i {
+    position: absolute;
+  }
+
+  .input-icons {
+    margin-bottom: 10px;
+  }
+
+  .icon {
+    padding: 12px;
+    min-width: 40px;
+  }
+
+  .fa-user-circle {
+    padding: 4px;
+    padding-left: 10px;
+  }
+
+  /* footer {
+    position: fixed;
+    display: grid;
+  } */
+
+  footer h3 {
+    padding: 10px;
+    font-size: 0.5em;
+  }
+  #timetable {
+    height: 100vh;
+  }
+}

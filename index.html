@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ML Fitness</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <p id="headerID"></p>
+    <section id="homepage">
+      <h1>
+        We train athletes, professional, collegiate, youth, and anybody that
+        wants to train like an athlete. <br />When we speak of training we are
+        talking about speed, strength, power, and sports therapy. <br />Our
+        business is aimed at a health conscience adult who wants to move beyond
+        the usual local gym.
+      </h1>     
+      <table id="imagestable">
+        <tr>
+          <td>
+            <div class="container">
+              <img src="../images/strength.png" alt="strength" class="image" />
+              <div class="overlay">
+                <div class="text">STRENGTH</div>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="container">
+              <img src="../images/speed.png" alt="speed" class="image" />
+              <div class="overlay">
+                <div class="text">SPEED</div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="container">
+              <img src="../images/power.png" alt="power" class="image" />
+              <div class="overlay">
+                <div class="text">POWER</div>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="container">
+              <img src="../images/sport.png" alt="sport" class="image" />
+              <div class="overlay">
+                <div class="text">SPORT</div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <p id="footerID"></p>
+
+    <script>
+      $("#headerID").load("html/siteheader.html");
+      $("#footerID").load("html/sitefooter.html");
+    </script>
+  </body>
+</html>
